@@ -1,0 +1,273 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: recursive;
+    src: url(./fontes/Recursive-VariableFont_CASL\,CRSV\,MONO\,slnt\,wght.ttf);
+}
+
+
+:root {
+    --azul-rota: #1A2E4E;
+    --verde-musgo: #20571D;
+    --verde-claro: #2B9109;
+    --branco: #ffffff;
+    --preto: 000000;
+    --fundo-site: #c9c9c9;
+
+
+
+}
+
+
+.container-grid {
+    width: 80vw;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--fundo-site);
+}
+
+
+.banner {
+    background-image: url(./img/Banner.png);
+    height: 120vh;
+    background-repeat: no-repeat;
+    background-position: 0- 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+header {
+    height: 165px;
+}
+
+header .container-grid {
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 200px;
+
+}
+
+
+header img {
+    width: 234px;
+    margin-left: 100px;
+}
+
+
+.menu {
+    max-width: 700px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    font-size: 25px;
+    color: var(--branco);
+    font-family: "recursive", medium;
+    text-decoration: underline transparent;
+    text-decoration-thickness: 3px;
+    transition: text-decoration 500ms ease;
+
+}
+
+.menu a:hover {
+    text-decoration-color: var(--verde-claro);
+}
+
+.conteudo-banner {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.conteudo-banner img {
+    max-width: 380px;
+    width: 50%;
+}
+
+.conteudo-banner p {
+    font-family: "recursive", sans-liner-bold;
+    font-size: 45px;
+    font-weight: 400;
+    color: var(--fundo-site);
+    text-transform: uppercase;
+    margin-bottom: 450px;
+    align-items: center;
+}
+
+#sobre {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+#sobre img {
+    max-width: 460px;
+    width: 40%;
+    border-radius: 40px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.titulo {
+    font-size: 40px;
+    margin-right: 5px;
+    font-family: "recursive", sans-linear-bold;
+    color: var(--verde-musgo);
+    text-align: center;
+}
+
+#sobre p {
+    font-family: "Recursive", sans-linear;
+    font-size: 20px;
+    text-align: justify;
+    margin-top: 30px;
+    color: var(--azul-rota);
+}
+
+
+#parallax {
+    height: 250px;
+    background: linear-gradient(rgba(0, 0, 0, 0.26)), url(./img/61Ml4QIFwNS._AC_SX679_.jpg);
+
+    margin-bottom: 120px;
+
+    background-attachment: fixed;
+
+    background-size: 30%;
+}
+
+
+#aventuras {
+    margin-bottom: 120px;
+}
+
+#aventuras img {
+    width: 250px;
+}
+
+/* .agua h3 {
+    font-family: "recursive", sans-linear-bold;
+    font-size: 40px;
+    color: var(--verde-musgo);
+}
+
+.agua ul {
+    font-family: "recursive", sans-linear;
+    font-size: 20px;
+    color: var(--azul-rota);
+}
+
+.ar h3 {
+    font-family: "recursive", sans-linear-bold;
+    font-size: 40px;
+    color: var(--verde-musgo);
+}
+
+.ar ul {
+    font-family: "recursive", sans-linear;
+    font-size: 20px;
+    color: var(--azul-rota);
+}
+
+.terra h3 {
+    font-family: "recursive", sans-linear-bold;
+    font-size: 40px;
+    color: var(--verde-musgo);
+}
+
+.terra ul {
+    font-family: "recursive", sans-linear;
+    font-size: 20px;
+    color: var(--azul-rota);
+}  */
+
+.aventuras-conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    gap: 20px;
+
+}
+
+.elementos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+
+}
+
+.elementos h3 {
+    font-family: "recursive", sans-linear-bold;
+    font-size: 40px;
+    color: var(--verde-musgo);
+}
+
+.elementos ul {
+    font-family: "recursive", sans-linear;
+    font-size: 20px;
+    color: var(--azul-rota);
+}
+
+.secao-contato {
+    background-color: var(--azul-rota);
+    color: white;
+    padding: 20px;
+}
+
+.secao-contato ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.secao-contato li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: "recursive", sans-linear;
+}
+
+
+.secao-contato img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    filter: invert(1);
+}
+
+.slogan {
+    background-color:var(--fundo-site);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.slogan h1 {
+    color: var(--verde-musgo);
+    font-weight: 700;
+    font-size: 40px;
+   font-family: "recursive", sans-linear-bold;
+}
